@@ -1,3 +1,4 @@
+// this file is the form file from that reflect the users collection schema
 import React from "react";
 
 function Form() {
