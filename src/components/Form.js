@@ -5,7 +5,8 @@ function Form() {
   return (
     <div>
       <form>
-        <label for="username">Username:</label>
+        <h1>Create an account</h1>
+        <label htmlFor="username">Username:</label>
         <input
           type="text"
           id="username"
@@ -15,16 +16,16 @@ function Form() {
           required
         />
 
-        <label for="firstName">First Name:</label>
+        <label htmlFor="firstName">First Name:</label>
         <input type="text" id="firstName" name="first_name" required />
 
-        <label for="lastName">Last Name:</label>
+        <label htmlFor="lastName">Last Name:</label>
         <input type="text" id="lastName" name="last_name" required />
 
-        <label for="email">Email:</label>
+        <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="password">Password:</label>
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
           id="password"
