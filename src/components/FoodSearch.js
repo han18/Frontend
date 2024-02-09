@@ -17,7 +17,21 @@ function FoodSearch() {
     props.moviesearch(formData.searchterm);
   };
 
-  return <div>FoodSearch</div>;
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          className="input"
+          type="text"
+          name="searchterm"
+          placeholder="search movie here....."
+          onChange={handleChange}
+          value={formData.searchterm}
+        />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  );
 }
 
 export default FoodSearch;
