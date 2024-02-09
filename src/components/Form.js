@@ -1,7 +1,7 @@
-// this file is the form file from that reflect the users collection schema
+// this file is the form reflects the users collection schema
 import "../styles/button.css";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const Form = () => {
@@ -28,7 +28,6 @@ const Form = () => {
 
       if (response.status === 201) {
         console.log("User added successfully", response.data.user);
-        // You may redirect or perform other actions upon successful user addition
       } else {
         console.error("Failed to add user");
       }
@@ -93,7 +92,7 @@ const Form = () => {
           type="password"
           id="password"
           name="password"
-          minLength="8"
+          minLength="5"
           maxLength="50"
           required
           value={formData.password}
