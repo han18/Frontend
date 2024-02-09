@@ -3,14 +3,39 @@ import { useEffect, useState } from "react";
 import Form from "./components/Form";
 
 function App() {
-  const [recipes, setRecipes] = useState(null);
+  // const [meals, setMeals] = useState([]);
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const fetchData = async (searchTerm) => {
+  //     try {
+  //       const response = await fetch(
+  //         `https://www.themealdb.com/api/json/v1/1/search.php?f=a${searchTerm}`
+  //       );
+  //       console.log(response);
+  //       const data = await response.json();
+  //       setMeals(data.meals);
+  //       console.log(data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // if (loading) {
+  //   return <p>Loading...</p>;
+  // } else (error) {
+  //   return <p>Error: {error.message}</p>;
+  // }
 
   return (
-    <div className="App">
-      <h1>Howedible</h1>
+    <div>
       <Form />
     </div>
   );
 }
-
 export default App;

@@ -1,5 +1,5 @@
 // this file is the form reflects the users collection schema
-import "../styles/button.css";
+import "../styles/Button.module.css";
 
 import { useState } from "react";
 import axios from "axios";
@@ -26,6 +26,7 @@ const Form = () => {
         formData
       );
 
+      console.log(formData);
       if (response.status === 201) {
         console.log("User added successfully", response.data.user);
       } else {
@@ -38,7 +39,7 @@ const Form = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1>Create an account</h1>
         <label htmlFor="username">Username:</label>
         <input
@@ -54,10 +55,10 @@ const Form = () => {
           title="minimum 3 characters, maximum 15 characters"
         />
 
-        <label htmlFor="firstName">First Name:</label>
+        <label htmlFor="first_name">First Name:</label>
         <input
           type="text"
-          id="firstName"
+          id="first_name"
           name="first_name"
           required
           value={formData.first_name}
@@ -65,10 +66,10 @@ const Form = () => {
           placeholder="Enter First Name"
         />
 
-        <label htmlFor="lastName">Last Name:</label>
+        <label htmlFor="last_name">Last Name:</label>
         <input
           type="text"
-          id="lastName"
+          id="last_name"
           name="last_name"
           required
           value={formData.last_name}
@@ -101,9 +102,7 @@ const Form = () => {
           title="minimum 8 characters, maximum 50 characters"
         />
 
-        <button onSubmit={handleSubmit} type="submit">
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
