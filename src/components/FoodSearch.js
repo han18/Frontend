@@ -10,6 +10,12 @@ function FoodSearch() {
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const handleSubmit = (event) => {
+    // Prevent page from refreshing on form submission
+    event.preventDefault();
+    // Pass the search term to moviesearch prop, which is App's getMovie function
+    props.moviesearch(formData.searchterm);
+  };
 
   return <div>FoodSearch</div>;
 }
