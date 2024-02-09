@@ -2,7 +2,11 @@
 
 imported the react-router-dom
 
-**********************\*\***********************\*\*\*\***********************\*\***********************
+Form: signup source references
+https://youtu.be/adMD46G5BXU?si=uPdY0tBqmz9D0jf-
+https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
+
+**********\*\***********\*\***********\*\***********\*\*\*\***********\*\***********\*\***********\*\***********
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -52,6 +52,7 @@ const Form = () => {
           value={formData.username}
           onChange={handleChange}
           placeholder="Enter Username"
+          title="minimum 3 characters, maximum 15 characters"
         />
 
         <label htmlFor="firstName">First Name:</label>
@@ -98,6 +99,7 @@ const Form = () => {
           value={formData.password}
           onChange={handleChange}
           placeholder="Enter Password"
+          title="minimum 8 characters, maximum 50 characters"
         />
 
         <button onSubmit={handleSubmit} type="submit">
