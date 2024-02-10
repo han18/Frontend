@@ -3,32 +3,40 @@ import { Link } from "react-router-dom";
 
 const FoodDisplay = ({ searchResults }) => {
   return (
-    <div>
+    <ul className="meal-list">
       {searchResults.map((meal) => (
-        <div></div>
+        <li key={meal.idMeal}>
+          <img src={meal.strMealThumb} alt={meal.strMeal} />
+          {meal.strMeal}
+          <br />
+          <Link to="/info">
+            <h1>Hello</h1>
+          </Link>
+        </li>
       ))}
-      ;
-    </div>
+    </ul>
   );
 };
 
 export default FoodDisplay;
 
-<Link to="/info">
+{
+  /* <Link to="/info">
   <button>info</button>
 </Link>;
 
 {
-  /* <ul className="meal-list">
-        {searchResults.map((meal) => (
-          <li key={meal.idMeal}>
-            <img src={meal.strMealThumb} alt={meal.strMeal} />
-            {meal.strMeal}
-            <br />
-            <Link to="/info">
-              <h1>Hello</h1>
-            </Link>
-          </li>
-        ))}
-      </ul> */
+  <ul className="meal-list">
+    {searchResults.map((meal) => (
+      <li key={meal.idMeal}>
+        <img src={meal.strMealThumb} alt={meal.strMeal} />
+        {meal.strMeal}
+        <br />
+        <Link to="/info">
+          <h1>Hello</h1>
+        </Link>
+      </li>
+    ))}
+  </ul>;
+} */
 }
