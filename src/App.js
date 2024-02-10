@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FoodSearch from "./components/FoodSearch";
 import { Route, Routes } from "react-router-dom";
 import "./styles/FoodForm.module.css";
+import FoodDisplay from "./components/FoodDisplay";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("a");
@@ -37,6 +38,7 @@ const App = () => {
           </li>
         ))}
       </ul>
+      <FoodDisplay />
     </div>
   );
 };
