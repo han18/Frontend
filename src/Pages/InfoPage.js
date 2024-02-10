@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 const Info = ({ searchResults }) => {
   return (
     <div>
-      <ul>
-        {searchResults.map((meal) => (
-          <li key={meal.idMeal}>{meal.strMeal}</li>
-        ))}
-      </ul>
+      <h1>This is the info page</h1>
     </div>
   );
 };
 
 export default Info;
+
+// <ul>
+//   {searchResults.map((meal) => (
+//     <li key={meal.idMeal}>{meal.strMeal}</li>
+//   ))}
+// </ul>

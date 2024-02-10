@@ -8,7 +8,7 @@ const FoodDisplay = ({ searchResults }) => {
         <li key={meal.idMeal}>
           <img src={meal.strMealThumb} alt={meal.strMeal} />
           {meal.strMeal}
-          <Link to={`/info/${meal.idMeal}`}>
+          <Link to={`/info`}>
             <button>info</button>
           </Link>
         </li>
