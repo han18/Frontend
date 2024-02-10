@@ -12,7 +12,7 @@ const FoodSearch = ({ setSearchTerm }) => {
         type="text"
         id="searchInput"
         onChange={handleInputChange}
-        placeholder="Enter a letter search query"
+        placeholder="Enter a letter to search recipes"
       />
     </div>
   );
