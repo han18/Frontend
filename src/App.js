@@ -22,6 +22,21 @@ const App = () => {
 
     fetchData();
   }, [searchTerm]);
+
+  return (
+    <div class="container">
+      <h1>Meal Search App</h1>
+      <FoodSearch setSearchTerm={setSearchTerm} />
+      <ul class="meal-list">
+        {searchResults.map((meal) => (
+          <li key={meal.idMeal}>
+            {meal.strMeal}
+            <img src={meal.strMealThumb} alt={meal.strMeal} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default App;
