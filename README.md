@@ -17,7 +17,9 @@ https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
 
 FoodSearch Component:
 api: www.themealdb.com/api/json/v1/1/search.php?f=a
-YT: https://youtu.be/HYSspU4XhC4?si=yegOMb-UetBGi893 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
+YT:
+https://youtu.be/HYSspU4XhC4?si=yegOMb-UetBGi893
+https://youtu.be/KRJvlxhLXxk?si=wNeW-FviPtoBl3cm \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

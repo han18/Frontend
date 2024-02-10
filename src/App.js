@@ -13,10 +13,11 @@ const App = () => {
           `https://www.themealdb.com/api/json/v1/1/search.php?f=${searchTerm}`
         );
         const data = await response.json();
+        // if recipe is there or return an empty array
         setSearchResults(data.meals || []);
         console.log(data);
-      } catch (error) {
-        console.error("Error");
+      } catch (e) {
+        console.error(e);
       }
     };
 
