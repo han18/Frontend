@@ -29,8 +29,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>Meal Search App</h1>
-      {/* Assuming FoodSearch is another component */}
+      <h1>Recipe Search App</h1>
       <FoodSearch setSearchTerm={setSearchTerm} />
       <FoodDisplay searchResults={searchResults} />
       <Routes>

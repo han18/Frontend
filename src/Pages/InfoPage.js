@@ -1,7 +1,6 @@
 // this is the info page that displays the info about the recipes
-import { Link } from "react-router-dom";
 
-const Info = ({ searchResults }) => {
+const Info = () => {
   return (
     <div>
       <h1>This is the info page</h1>
