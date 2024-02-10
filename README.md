@@ -19,7 +19,12 @@ FoodSearch Component:
 api: www.themealdb.com/api/json/v1/1/search.php?f=a
 YT:
 https://youtu.be/HYSspU4XhC4?si=yegOMb-UetBGi893
-https://youtu.be/KRJvlxhLXxk?si=wNeW-FviPtoBl3cm \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
+https://youtu.be/KRJvlxhLXxk?si=wNeW-FviPtoBl3cm
+
+Routing:
+https://www.youtube.com/watch?v=SLfhMt5OUPI
+
+\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

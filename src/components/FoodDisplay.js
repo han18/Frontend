@@ -1,7 +1,16 @@
-import { useEffect, useState } from "react";
+// this is where the food data will be displayed
 
-function FoodDisplay({ setSearchTerm }) {
-  return <div>FoodDisplay</div>;
-}
+const FoodDisplay = ({ searchResults }) => {
+  return (
+    <ul className="meal-list">
+      {searchResults.map((meal) => (
+        <li key={meal.idMeal}>
+          <img src={meal.strMealThumb} alt={meal.strMeal} />
+          {meal.strMeal}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default FoodDisplay;

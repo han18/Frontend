@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import FoodSearch from "./components/FoodSearch";
+import FoodDisplay from "./components/FoodDisplay";
 import { Route, Routes } from "react-router-dom";
 import "./styles/FoodForm.module.css";
-import FoodDisplay from "./components/FoodDisplay";
+import InfoPage from "./Pages/InfoPage";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("a");
@@ -27,20 +28,34 @@ const App = () => {
   }, [searchTerm]);
 
   return (
-    <div class="container">
+    <div className="container">
       <h1>Meal Search App</h1>
+      {/* Assuming FoodSearch is another component */}
       <FoodSearch setSearchTerm={setSearchTerm} />
-      <ul class="meal-list">
-        {searchResults.map((meal) => (
-          <li key={meal.idMeal}>
-            <img src={meal.strMealThumb} alt={meal.strMeal} />
-            {meal.strMeal}
-          </li>
-        ))}
-      </ul>
-      <FoodDisplay />
+      <FoodDisplay searchResults={searchResults} />
+      <Routes>
+        <Route path="/info" element={<InfoPage />} />
+      </Routes>
     </div>
   );
 };
 
 export default App;
+
+// return (
+//   <div class="container">
+//     <h1>Meal Search App</h1>
+//     <FoodSearch setSearchTerm={setSearchTerm} />
+//     <ul class="meal-list">
+//       {searchResults.map((meal) => (
+//         <li key={meal.idMeal}>
+//           <img src={meal.strMealThumb} alt={meal.strMeal} />
+//           {meal.strMeal}
+//         </li>
+//       ))}
+//     </ul>
+//     <Routes>
+//       <Route path="/info" element={<InfoPage />} />
+//     </Routes>
+//   </div>
+// );
