@@ -15,9 +15,7 @@ const App = () => {
         const data = await response.json();
         setSearchResults(data.meals || []);
         console.log(data);
-      } catch (error) {
-        console.error("Error");
-      }
+     
     };
   }, []);
 };
