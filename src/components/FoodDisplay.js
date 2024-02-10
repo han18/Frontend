@@ -10,6 +10,10 @@ const FoodDisplay = ({ searchResults }) => {
             <img src={meal.strMealThumb} alt={meal.strMeal} />
             {meal.strMeal}
             <br />
+            <Link to="/info">
+              <button>info</button>
+            </Link>
+            ;
           </li>
         ))}
       </ul>
