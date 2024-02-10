@@ -1,37 +1,22 @@
-// this file is where the food search component is rendered
-import { useState } from "react";
+import React from "react";
 
-function FoodSearch() {
-  // State to hold the data of our form
-  const [formData, setFormData] = useState({
-    searchterm: "",
-  });
-
+const FoodSearch = ({ setSearchTerm }) => {
   const handleInputChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = (event) => {
-    // Prevent page from refreshing on form submission
-    event.preventDefault();
-    // Pass the search term to moviesearch prop, which is App's getMovie function
-    props.moviesearch(formData.searchterm);
+    setSearchTerm(e.target.value);
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          className="input"
-          type="text"
-          name="searchterm"
-          placeholder="search movie here....."
-          onChange={handleChange}
-          value={formData.searchterm}
-        />
-        <input type="submit" value="submit" />
-      </form>
+    <div className="container">
+      <label htmlFor="searchInput">Search:</label>
+      <input
+        className="items"
+        type="text"
+        id="searchInput"
+        onChange={handleInputChange}
+        placeholder="Enter search query"
+      />
     </div>
   );
-}
+};
 
 export default FoodSearch;

@@ -1,14 +1,23 @@
 # Getting Started with Create React App
 
-List of installed dependencies
-imported the react-router-dom
-bootstrap
+This is the The backend github repository
+https://github.com/han18/Backend.git
 
-Form: signup source references
+## List of installed dependencies
+
+react-router-dom
+bootstrap
+axios
+
+## Source References
+
+Form: signup
 https://youtu.be/adMD46G5BXU?si=uPdY0tBqmz9D0jf-
 https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
 
-****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****
+FoodSearch Component:
+api: www.themealdb.com/api/json/v1/1/search.php?f=a
+YT: https://youtu.be/HYSspU4XhC4?si=yegOMb-UetBGi893 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
