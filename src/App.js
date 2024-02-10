@@ -31,8 +31,8 @@ const App = () => {
       <ul class="meal-list">
         {searchResults.map((meal) => (
           <li key={meal.idMeal}>
-            {meal.strMeal}
             <img src={meal.strMealThumb} alt={meal.strMeal} />
+            {meal.strMeal}
           </li>
         ))}
       </ul>
