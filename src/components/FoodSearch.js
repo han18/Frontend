@@ -1,3 +1,5 @@
+import "../styles/FoodForm.module.css";
+
 const FoodSearch = ({ setSearchTerm }) => {
   // to handle the search input change
   const handleInputChange = (e) => {
