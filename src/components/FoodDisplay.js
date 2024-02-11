@@ -12,16 +12,14 @@ const FoodDisplay = ({ searchResults }) => {
 
             <br />
             <Link to="/info">
-              <h1>Hello</h1>
+              <button>Info</button>
             </Link>
           </li>
         ))}
       </ul>
       <div>
         {searchResults.map((link) => (
-          <div key={link.idMeal}>
-            <h>{link.strArea}</h>
-          </div>
+          <div key={link.idMeal}>{/* <h>{link.strArea}</h> */}</div>
         ))}
       </div>
     </div>

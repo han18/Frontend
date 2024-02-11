@@ -1,34 +1,33 @@
 import React from "react";
-import "../styles/Navbar.module.css";
+// import "../styles/Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
-      <nav id="topnav">
-        <a id="logo" class="nav-link" href="#">
-          MY NAME
-        </a>
-        <a class="nav-link" href="#">
-          Link 1
-        </a>
-        <a class="nav-link" href="#">
-          Link 2
-        </a>
-        <a class="nav-link" href="#">
-          Link 3
-        </a>
-        <a class="nav-link" href="#">
-          Link 4
-        </a>
-        <a class="nav-link" href="#">
-          Link 5
-        </a>
-
-        <a id="about" class="nav-link" href="#">
-          About Me
-        </a>
-      </nav>
-    </div>
+    <nav style={{ backgroundColor: "#333", padding: "10px", color: "white" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h1>My Navbar</h1>
+        <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <Link to="/form">
+              <a href="#">Sign up</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 

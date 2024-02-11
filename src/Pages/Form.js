@@ -1,5 +1,6 @@
 // this file is the form reflects the users collection schema
 import "../styles/Signup.module.css";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import axios from "axios";
@@ -101,8 +102,9 @@ const Form = () => {
           placeholder="Enter Password"
           title="minimum 8 characters, maximum 50 characters"
         />
-
-        <button type="submit">Submit</button>
+        <Link to="/profile">
+          <button type="submit">Submit</button>
+        </Link>
       </form>
     </div>
   );

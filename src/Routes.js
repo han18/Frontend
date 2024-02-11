@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Form from "./components/Form";
+import Form from "./Pages/Form";
 import Profile from "./components/Profile";
 
 const Routes = () => {
