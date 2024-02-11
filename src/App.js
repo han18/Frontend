@@ -4,6 +4,7 @@ import FoodDisplay from "./components/FoodDisplay";
 import { Route, Routes } from "react-router-dom";
 import "./styles/FoodForm.module.css";
 import InfoPage from "./Pages/InfoPage";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("a");
@@ -29,6 +30,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <NavBar />
       <h1>Recipe Search App</h1>
       <FoodSearch setSearchTerm={setSearchTerm} />
       <FoodDisplay searchResults={searchResults} />

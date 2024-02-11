@@ -1,5 +1,5 @@
 // this file is the form reflects the users collection schema
-import "../styles/Button.module.css";
+import "../styles/Signup.module.css";
 
 import { useState } from "react";
 import axios from "axios";
