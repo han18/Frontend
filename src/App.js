@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import FoodSearch from "./components/FoodSearch";
 import FoodDisplay from "./components/FoodDisplay";
 import { Route, Routes } from "react-router-dom";
+import Form from "./components/Form";
 // import "./styles/FoodForm.module.css";
 import InfoPage from "./Pages/InfoPage";
 import NavBar from "./components/NavBar";
+import Profile from "./Pages/Profile";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("a");
@@ -36,7 +38,9 @@ const App = () => {
       <FoodDisplay searchResults={searchResults} />
       <Routes>
         <Route path="/info" element={<InfoPage />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
+      <Form />
     </div>
   );
 };
