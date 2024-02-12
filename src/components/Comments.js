@@ -112,7 +112,6 @@ const Comments = ({ id, user }) => {
       })
       .catch((err) => console.error(err));
   };
-
   return (
     <div className="comments">
       <h2>Comments</h2>
@@ -148,7 +147,7 @@ const Comments = ({ id, user }) => {
               <p>{comment?.content}</p>
               {comment?.user_id?._id === user?._id && (
                 <div className={styles.commentAction}>
-                  <img
+                  {/* <img
                     onClick={() => deleteComment(comment?._id)}
                     src="/delete.png"
                     alt="delete"
@@ -157,7 +156,16 @@ const Comments = ({ id, user }) => {
                     onClick={() => setEditableComment(comment)}
                     src="/editing.png"
                     alt="editing"
-                  />
+                  /> */}
+                  <button
+                    style={{ background: "red" }}
+                    onClick={() => deleteComment(comment?._id)}
+                  >
+                    Delete
+                  </button>
+                  <button onClick={() => setEditableComment(comment)}>
+                    Edit
+                  </button>
                 </div>
               )}
             </li>
