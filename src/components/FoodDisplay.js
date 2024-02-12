@@ -1,10 +1,11 @@
 // this is where the food data will be displayed
 import "../styles/FoodForm.module.css";
+
 import { Link } from "react-router-dom";
 
 const FoodDisplay = ({ searchResults }) => {
   return (
-    <div>
+    <div className="foods">
       <ul className="meal-list">
         {searchResults.map((meal) => (
           <li key={meal.idMeal}>
@@ -12,7 +13,7 @@ const FoodDisplay = ({ searchResults }) => {
             {meal.strMeal}
 
             <br />
-            <Link to="/info">
+            <Link to={`/info/${meal?.idMeal}`}>
               <button>View Recipe</button>
             </Link>
           </li>
