@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FoodSearch from "./components/FoodSearch";
 import FoodDisplay from "./components/FoodDisplay";
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Form from "./Pages/Form";
 // import "./styles/FoodForm.module.css";
 import InfoPage from "./Pages/InfoPage";
