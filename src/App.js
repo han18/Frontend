@@ -1,46 +1,40 @@
-import React, { useState, useEffect } from "react";
-import FoodSearch from "./components/FoodSearch";
-import FoodDisplay from "./components/FoodDisplay";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Form from "./Pages/Form";
 // import "./styles/FoodForm.module.css";
+import "./App.css";
+import Home from "./Pages/Home";
 import InfoPage from "./Pages/InfoPage";
-import NavBar from "./components/NavBar";
+import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
-import Comments from "./components/Comments";
+import NavBar from "./components/NavBar";
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState("a");
-  const [searchResults, setSearchResults] = useState([]);
+  const [user, setUser] = useState({});
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `https://www.themealdb.com/api/json/v1/1/search.php?f=${searchTerm}`
-        );
-        const data = await response.json();
-        // if recipe is there or return an empty array
-        setSearchResults(data.meals || []);
-        console.log(data);
-      } catch (e) {
-        console.error(e);
-      }
-    };
-
-    fetchData();
-  }, [searchTerm]);
+    let userData = localStorage.getItem("user");
+    userData = JSON.parse(userData);
+    if (userData?.email) {
+      setUser(userData);
+    }
+  }, []);
 
   return (
     <div className="container">
-      <NavBar />
-      <h1>Recipe Search App</h1>
-      <FoodSearch setSearchTerm={setSearchTerm} />
-      <FoodDisplay searchResults={searchResults} />
+      <NavBar user={user} setUser={setUser} />
       <Routes>
-        <Route path="/info" element={<InfoPage />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/form" element={<Form />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/info/:id" element={<InfoPage user={user} />} />
+        <Route
+          path="/profile"
+          element={<Profile user={user} setUser={setUser} />}
+        />
+        <Route path="/form" element={<Form user={user} setUser={setUser} />} />
+        <Route
+          path="/login"
+          element={<Login user={user} setUser={setUser} />}
+        />
       </Routes>
     </div>
   );
