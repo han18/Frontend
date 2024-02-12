@@ -1,10 +1,36 @@
 // this is the info page that displays the info about the recipes
 
-const Info = () => {
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Comments from "../components/Comments";
+import styles from "../styles/FoodInfo.module.css";
+
+const Info = ({ user }) => {
+  const [meal, setMeal] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    if (id) {
+      const fetchData = async () => {
+        try {
+          // get single meal using meal id
+          const response = await fetch(
+            `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
+          );
+          const data = await response.json();
+          // if recipe is there or return an empty array
+          setMeal(data.meals[0] || {});
+        } catch (e) {
+          console.error(e);
+        }
+      };
+
+      fetchData();
+    }
+  }, [id]);
+
   return (
-    <div>
-      <h1>This is the info page</h1>
-    </div>
+    
   );
 };
 
