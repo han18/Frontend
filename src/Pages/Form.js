@@ -1,11 +1,11 @@
 // this file is the form reflects the users collection schema
 import "../styles/Signup.module.css";
-import { Link } from "react-router-dom";
 
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Form = () => {
+const Form = ({ setUser }) => {
   const [formData, setFormData] = useState({
     username: "",
     first_name: "",
@@ -13,6 +13,8 @@ const Form = () => {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -32,7 +34,8 @@ const Form = () => {
         console.log("User added successfully", response.data.user);
 
         // taking the user id from the response and redirecting them to the profile page
-        window.location.href = `/profile/${response.data.user._id}`;
+        // window.location.href = `/profile/${response.data.user._id}`;
+        navigate("/login");
       } else {
         console.error("Failed to add user");
       }
