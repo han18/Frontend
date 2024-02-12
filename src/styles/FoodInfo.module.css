@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80% !important;
+  max-width: 600px;
+}
+
+.addComment textarea {
+  width: 100%;
+  display: block;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 150px;
+  outline: none;
+  padding: 10px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+}
+.comment {
+  width: 100%;
+  padding: 5px;
+}
+
+.commentAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.commentAction img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

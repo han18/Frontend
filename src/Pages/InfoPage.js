@@ -30,7 +30,18 @@ const Info = ({ user }) => {
   }, [id]);
 
   return (
-    
+    <div className={styles.container}>
+      <div>
+        <img src={meal?.strMealThumb} alt={meal?.strMeal} />
+      </div>
+      <br />
+      <h1>{meal?.strMeal}</h1>
+      <span>{meal?.strArea}</span>
+      <br />
+      <p>{meal?.strInstructions}</p>
+
+      <Comments id={id} user={user} />
+    </div>
   );
 };
 
