@@ -26,7 +26,8 @@ https://youtu.be/oU2c_02YaME?si=0w42wwgzfwVQBMDZ
 Routing:
 https://www.youtube.com/watch?v=SLfhMt5OUPI
 
-\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
+Redirect users to pages in the profile
+https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/ \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

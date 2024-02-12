@@ -30,6 +30,9 @@ const Form = () => {
       console.log(formData);
       if (response.status === 201) {
         console.log("User added successfully", response.data.user);
+
+        // taking the user id from the response and redirecting them to the profile page
+        window.location.href = `/profile/${response.data.user._id}`;
       } else {
         console.error("Failed to add user");
       }
@@ -102,14 +105,11 @@ const Form = () => {
           placeholder="Enter Password"
           title="minimum 8 characters, maximum 50 characters"
         />
-        <Link to="/profile">
-          <button type="submit">Submit</button>
-        </Link>
+
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
 export default Form;
-
-//

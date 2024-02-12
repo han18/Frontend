@@ -1,4 +1,5 @@
 // this is where the food data will be displayed
+import "../styles/FoodForm.module.css";
 import { Link } from "react-router-dom";
 
 const FoodDisplay = ({ searchResults }) => {
@@ -12,7 +13,7 @@ const FoodDisplay = ({ searchResults }) => {
 
             <br />
             <Link to="/info">
-              <button>Info</button>
+              <button>View Recipe</button>
             </Link>
           </li>
         ))}

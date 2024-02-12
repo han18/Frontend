@@ -12,14 +12,8 @@ const NavBar = () => {
           alignItems: "center",
         }}
       >
-        <h1>My Navbar</h1>
+        <h1>HowEdible</h1>
         <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
           <li>
             <Link to="/form">
               <a href="#">Sign up</a>
