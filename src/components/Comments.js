@@ -1,110 +1,114 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import styles from "../styles/FoodInfo.module.css";
 
-const Comments = () => {
+const Comments = ({ id, user }) => {
   const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState("");
+  const [comment, setComment] = useState("");
+  const [editableComment, setEditableComment] = useState({});
+
+  // when editbale comment state change
+  useEffect(() => {
+    if (editableComment?._id) {
+      setComment(editableComment?.content);
+    }
+  }, [editableComment]);
 
   useEffect(() => {
-    // Fetch comments on component mount
-    fetchComments();
-  }, []);
+    if (id) {
+      const fetchData = async () => {
+        try {
+          // get all comments
+          const commentResponse = await fetch(
+            `http://localhost:3100/api/comments`
+          );
+          const commentsData = await commentResponse.json();
+          // if recipe is there or return an empty array
+          setComments(commentsData || []);
+        } catch (e) {
+          console.error(e);
+        }
+      };
 
-  const fetchComments = async () => {
-    try {
-      const response = await fetch("http://localhost:3100/api/comments");
-      const data = await response.json();
-      setComments(data);
-    } catch (error) {
-      console.error("Error fetching comments:", error);
+      fetchData();
     }
-  };
+  }, [id]);
 
-  const handleAddComment = async () => {
-    try {
-      const response = await fetch("http://localhost:3100/api/comments", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ content: newComment }),
-      });
+  // add new comment and update comment
+  const submitHanlder = (e) => {
+    e.preventDefault();
 
-      const data = await response.json();
-      setComments([...comments, data]);
-      setNewComment("");
-    } catch (error) {
-      console.error("Error adding comment:", error);
-    }
-  };
-
-  const handleUpdateComment = async (id, updatedContent) => {
-    try {
-      const response = await fetch(`http://localhost:3100/api/comments/${id}`, {
+    if (editableComment?._id) {
+      const options = {
         method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ content: updatedContent }),
-      });
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: comment, user_id: user?._id }),
+      };
 
-      const updatedComment = await response.json();
-      const updatedComments = comments.map((comment) =>
-        comment._id === id ? updatedComment : comment
-      );
-      setComments(updatedComments);
-    } catch (error) {
-      console.error("Error updating comment:", error);
-    }
-  };
-
-  const handleDeleteComment = async (id) => {
-    try {
-      const response = await fetch(`http://localhost:3100/api/comments/${id}`, {
-        method: "DELETE",
-      });
-
-      if (response.status === 200) {
-        const updatedComments = comments.filter(
-          (comment) => comment._id !== id
-        );
-        setComments(updatedComments);
-      }
-    } catch (error) {
-      console.error("Error deleting comment:", error);
-    }
-  };
-
-  return (
-    <div>
-      <h2>Comments</h2>
-      <ul>
-        {comments.map((comment) => (
-          <li key={comment._id}>
-            {comment.content}
-            <button
-              onClick={() =>
-                handleUpdateComment(comment._id, "Updated Content")
+      fetch(
+        `http://localhost:3100/api/comments/${editableComment?._id}`,
+        options
+      )
+        .then((response) => response.json())
+        .then((response) => {
+          if (response?._id) {
+            const updatedComments = comments?.map((item) => {
+              if (item?._id === response?._id) {
+                return {
+                  ...response,
+                  user_id: user,
+                };
+              } else {
+                return item;
               }
-            >
-              Update
-            </button>
-            <button onClick={() => handleDeleteComment(comment._id)}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
-      <div>
-        <input
-          type="text"
-          value={newComment}
-          onChange={(e) => setNewComment(e.target.value)}
-          placeholder="Enter new comment"
-        />
-        <button onClick={handleAddComment}>Add Comment</button>
-      </div>
-    </div>
-  );
-};
+            });
 
-export default Comments;
+            setComments(updatedComments);
+            setEditableComment({});
+            setComment("");
+          }
+        })
+        .catch((err) => console.error(err));
+    } else {
+      const options = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: comment, user_id: user?._id }),
+      };
+
+      fetch("http://localhost:3100/api/comments", options)
+        .then((response) => response.json())
+        .then((response) => {
+          if (response?._id) {
+            setComments([
+              ...comments,
+              {
+                ...response,
+                user_id: user,
+              },
+            ]);
+            setComment("");
+          }
+        })
+        .catch((err) => console.error(err));
+    }
+  };
+
+  // delete comment handler
+  const deleteComment = (id) => {
+    const options = {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+    };
+
+    fetch(`http://localhost:3100/api/comments/${id}`, options)
+      .then((response) => response.json())
+      .then((response) => {
+        if (response?._id) {
+          const updatedComments = comments?.filter(
+            (item) => item?._id !== response?._id
+          );
+          setComments(updatedComments);
+        }
+      })
+      .catch((err) => console.error(err));
+  };
