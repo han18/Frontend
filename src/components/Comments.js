@@ -112,3 +112,60 @@ const Comments = ({ id, user }) => {
       })
       .catch((err) => console.error(err));
   };
+
+  return (
+    <div className="comments">
+      <h2>Comments</h2>
+
+      {user?.email && (
+        <div className={styles?.addComment}>
+          <span>Add New Comment</span>
+          <br />
+          <br />
+          <form onSubmit={submitHanlder}>
+            <textarea
+              onChange={(e) => setComment(e.target.value)}
+              placeholder="Write Something..."
+              required
+              value={comment}
+            />
+            <br />
+            <button>{editableComment?._id ? "Update" : "Submit"}</button>
+          </form>
+        </div>
+      )}
+
+      <br />
+      <div>
+        <span>All Comments</span>
+        <ul className={styles.comments}>
+          {comments?.map((comment) => (
+            <li key={comment?._id} className={styles.comment}>
+              <div className={styles.commentUser}>
+                <span>{comment?.user_id?.first_name} </span>
+                <span>{comment?.user_id?.last_name}</span>
+              </div>
+              <p>{comment?.content}</p>
+              {comment?.user_id?._id === user?._id && (
+                <div className={styles.commentAction}>
+                  <img
+                    onClick={() => deleteComment(comment?._id)}
+                    src="/delete.png"
+                    alt="delete"
+                  />
+                  <img
+                    onClick={() => setEditableComment(comment)}
+                    src="/editing.png"
+                    alt="editing"
+                  />
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Comments;
