@@ -30,7 +30,14 @@ const NavBar = ({ user, setUser }) => {
       >
         <h1>
           {/* both link howedible and Home go back to the homepage */}
-          <Link style={{ color: "white", textDecoration: "none" }} to="/">
+          <Link
+            style={{
+              color: "white",
+              textDecoration: "none",
+              marginLeft: "30px",
+            }}
+            to="/"
+          >
             HowEdible
           </Link>
         </h1>
