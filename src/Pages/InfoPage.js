@@ -36,9 +36,9 @@ const Info = ({ user }) => {
       </div>
       <br />
       <h1>{meal?.strMeal}</h1>
-      <span>{meal?.strArea}</span>
+      <span>Country: {meal?.strArea}</span>
       <br />
-      <p>{meal?.strInstructions}</p>
+      <p>Instructions: {meal?.strInstructions}</p>
 
       <Comments id={id} user={user} />
     </div>
