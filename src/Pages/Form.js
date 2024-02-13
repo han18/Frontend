@@ -47,7 +47,7 @@ const Form = ({ setUser }) => {
   };
 
   return (
-    <div>
+    <div className="container-auth">
       <form onSubmit={handleSubmit}>
         <h1>Create an account</h1>
         <label htmlFor="username">Username:</label>

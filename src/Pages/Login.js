@@ -44,7 +44,7 @@ const Login = ({ setUser }) => {
   };
 
   return (
-    <div>
+    <div className="container-auth">
       <form onSubmit={handleSubmit}>
         <h1>Welcome Back</h1>
 
