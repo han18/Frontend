@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const NavBar = ({ user, setUser }) => {
   const navigate = useNavigate();
 
-  // log out handler function and using the navigate function
+  // log out handler function and using the useNavigate hook
   const logOut = () => {
     setUser({});
     localStorage.removeItem("user");
