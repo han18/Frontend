@@ -6,6 +6,7 @@ const FoodSearch = ({ setSearchTerm }) => {
     setSearchTerm(e.target.value);
   };
 
+  // this is the input to search for recipes
   return (
     <div className="container">
       <label htmlFor="searchInput">Search:</label>

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const NavBar = ({ user, setUser }) => {
   const navigate = useNavigate();
 
-  // log out handler
+  // log out handler function and using the navigate function
   const logOut = () => {
     setUser({});
     localStorage.removeItem("user");
@@ -21,6 +21,7 @@ const NavBar = ({ user, setUser }) => {
         }}
       >
         <h1>
+          {/* both link howedible and Home go back to the homepage */}
           <Link style={{ color: "white", textDecoration: "none" }} to="/">
             HowEdible
           </Link>
