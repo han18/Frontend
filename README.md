@@ -47,6 +47,7 @@ https://stackoverflow.com/questions/60688411/assign-local-storage-to-react-state
 https://www.youtube.com/watch?v=ZawAwPYrxGA
 https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 
+## This is the frontend wireframe of the app
 <img width="912" alt="frontendwireframe" src="https://github.com/han18/Frontend/assets/35694323/1f4eba38-562f-42fa-94d5-76205f12beb3">
 
 
