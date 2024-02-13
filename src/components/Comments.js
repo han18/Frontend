@@ -37,6 +37,7 @@ const Comments = ({ id, user }) => {
   const submitHanlder = (e) => {
     e.preventDefault();
 
+    // to edit comment
     if (editableComment?._id) {
       const options = {
         method: "PUT",
@@ -161,6 +162,7 @@ const Comments = ({ id, user }) => {
                     style={{ background: "red" }}
                     onClick={() => deleteComment(comment?._id)}
                   >
+                    {/* to delete a comment */}
                     Delete
                   </button>
                   <button onClick={() => setEditableComment(comment)}>
