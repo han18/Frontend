@@ -12,7 +12,15 @@ const NavBar = ({ user, setUser }) => {
     navigate("/");
   };
   return (
-    <nav style={{ backgroundColor: "#333", padding: "10px", color: "white" }}>
+    <nav
+      style={{
+        backgroundColor: "#045C25 ",
+        padding: "6px",
+        color: "white",
+        margin: "10px",
+        borderRadius: "10px",
+      }}
+    >
       <div
         style={{
           display: "flex",
