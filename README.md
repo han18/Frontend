@@ -3,6 +3,10 @@
 This is the The backend github repository
 https://github.com/han18/Backend.git
 
+## Discription of the project:
+
+HowEdible is a recipe search app that coantian recipes from all over the world with images and cooking instructions.
+
 ## List of installed dependencies
 
 react-router-dom
@@ -29,10 +33,11 @@ https://www.youtube.com/watch?v=SLfhMt5OUPI
 Redirect users to pages in the profile
 https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/
 
-## Sources to use the useNavigate
+## Sources to use the useNavigate and local storage
 
 https://www.youtube.com/watch?v=NvNJtZaDt8E
 https://reactrouter.com/en/main/hooks/use-navigate
+https://www.youtube.com/watch?v=rWfhwW9forg
 
 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 

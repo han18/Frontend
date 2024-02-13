@@ -40,6 +40,7 @@ const Info = ({ user }) => {
       <br />
       <p>Instructions: {meal?.strInstructions}</p>
 
+      {/* user id comments */}
       <Comments id={id} user={user} />
     </div>
   );

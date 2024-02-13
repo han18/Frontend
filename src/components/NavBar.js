@@ -28,24 +28,26 @@ const NavBar = ({ user, setUser }) => {
         </h1>
         <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
           </li>
           {user?.email ? (
             <li>
               <span style={{ color: "black" }} onClick={logOut}>
-                <a>Log out</a>
+                <p>Log out</p>
               </span>
             </li>
           ) : (
             <>
               <li>
                 <Link to="/form">
-                  <a href="#">Sign up</a>
+                  <p>Sign up</p>
                 </Link>
               </li>
               <li>
                 <Link to="/login">
-                  <a href="#">Login</a>
+                  <p>Login</p>
                 </Link>
               </li>
             </>
