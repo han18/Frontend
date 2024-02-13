@@ -31,6 +31,7 @@ https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/
 
 ## Sources to use the useNavigate
 
+https://www.youtube.com/watch?v=NvNJtZaDt8E
 https://reactrouter.com/en/main/hooks/use-navigate
 
 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***

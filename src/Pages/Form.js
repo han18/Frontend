@@ -14,12 +14,14 @@ const Form = ({ setUser }) => {
     password: "",
   });
 
+  // to redirect the user to the profile page
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // function to submit the form
   const handleSubmit = async (e) => {
     e.preventDefault();
 
