@@ -11,7 +11,7 @@ const FoodDisplay = ({ searchResults }) => {
           <li key={meal.idMeal}>
             <img src={meal.strMealThumb} alt={meal.strMeal} />
             {meal.strMeal}
-
+            {/* linking to the info page when the view button is clicked */}
             <br />
             <Link to={`/info/${meal?.idMeal}`}>
               <button>View Recipe</button>
@@ -31,6 +31,7 @@ const FoodDisplay = ({ searchResults }) => {
 export default FoodDisplay;
 
 {
+  // this is old code
   /* <Link to="/info">
   <button>info</button>
 </Link>;
