@@ -3,9 +3,9 @@
 This is the The backend github repository
 https://github.com/han18/Backend.git
 
-## Discription of the project:
+## Description of the project:
 
-HowEdible is a recipe search app that coantian recipes from all over the world with images and cooking instructions.
+HowEdible is a recipe search app that contains recipes from all over the world with images and cooking instructions.
 
 ## List of installed dependencies
 
@@ -19,10 +19,12 @@ Form: signup
 https://youtu.be/adMD46G5BXU?si=uPdY0tBqmz9D0jf-
 https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
 
-FoodSearch Component:
+## FoodSearch Component:
+
 api: www.themealdb.com/api/json/v1/1/search.php?f=a
 
-YT:
+## YT:
+
 https://youtu.be/HYSspU4XhC4?si=yegOMb-UetBGi893
 https://youtu.be/KRJvlxhLXxk?si=wNeW-FviPtoBl3cm
 https://youtu.be/oU2c_02YaME?si=0w42wwgzfwVQBMDZ
@@ -38,6 +40,7 @@ https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/
 https://www.youtube.com/watch?v=NvNJtZaDt8E
 https://reactrouter.com/en/main/hooks/use-navigate
 https://www.youtube.com/watch?v=rWfhwW9forg
+https://stackoverflow.com/questions/60688411/assign-local-storage-to-react-state-react-hooks
 
 ## css reference and sourses
 
