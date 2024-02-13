@@ -39,6 +39,11 @@ https://www.youtube.com/watch?v=NvNJtZaDt8E
 https://reactrouter.com/en/main/hooks/use-navigate
 https://www.youtube.com/watch?v=rWfhwW9forg
 
+## css reference and sourses
+
+https://www.youtube.com/watch?v=ZawAwPYrxGA
+https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
+
 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
