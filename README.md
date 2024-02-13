@@ -50,6 +50,10 @@ https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 ## This is the frontend wireframe of the app
 <img width="912" alt="frontendwireframe" src="https://github.com/han18/Frontend/assets/35694323/1f4eba38-562f-42fa-94d5-76205f12beb3">
 
+## This is the frontend structure of the app
+<img width="886" alt="Screenshot 2024-02-13 at 12 25 30 PM" src="https://github.com/han18/Frontend/assets/35694323/9f46b6a4-51ff-43ee-bbff-0c2a45da2a02">
+
+
 
 \***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***\*\*\***\*\*\*\*\***
 
