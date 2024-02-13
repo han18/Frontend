@@ -9,8 +9,8 @@ HowEdible is a recipe search app that contains recipes from all over the world w
 
 ## List of installed dependencies
 
-react-router-dom
-bootstrap
+react-router-dom,
+bootstrap,
 axios
 
 ## Source References
