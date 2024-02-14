@@ -22,7 +22,7 @@ const Login = ({ setUser }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3100/api/users/login",
+        "https://howedible-backend.onrender.com/api/users/login",
         formData
       );
       console.log(response?.data);
