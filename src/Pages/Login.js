@@ -27,6 +27,7 @@ const Login = ({ setUser }) => {
       );
       console.log(response?.data);
 
+      // If success it saves user information to the local storag sets the state, and redirects the user to the profile
       if (response.data?.user?._id) {
         localStorage.setItem("user", JSON.stringify(response.data?.user));
         setUser(response.data?.user);

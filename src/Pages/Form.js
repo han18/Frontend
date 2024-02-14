@@ -35,7 +35,7 @@ const Form = ({ setUser }) => {
       if (response.status === 201) {
         console.log("User added successfully", response.data.user);
 
-        // taking the user id from the response and redirecting them to the profile page
+        // taking the user id from the response and redirecting them to the login page
         // window.location.href = `/profile/${response.data.user._id}`;
         navigate("/login");
       } else {

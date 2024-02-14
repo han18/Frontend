@@ -12,6 +12,7 @@ import NavBar from "./components/NavBar";
 const App = () => {
   const [user, setUser] = useState({});
 
+  // also used to set the user in the local storage
   useEffect(() => {
     let userData = localStorage.getItem("user");
     userData = JSON.parse(userData);

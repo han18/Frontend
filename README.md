@@ -35,12 +35,17 @@ https://www.youtube.com/watch?v=SLfhMt5OUPI
 Redirect users to pages in the profile
 https://www.geeksforgeeks.org/how-to-redirect-to-a-relative-url-in-javascript/
 
-## Sources to use the useNavigate and local storage
+## Sources to use the useNavigate and local storage and
 
 https://www.youtube.com/watch?v=NvNJtZaDt8E
 https://reactrouter.com/en/main/hooks/use-navigate
 https://www.youtube.com/watch?v=rWfhwW9forg
 https://stackoverflow.com/questions/60688411/assign-local-storage-to-react-state-react-hooks
+https://www.youtube.com/watch?v=fTP2gi7e3k8
+
+## optional chaining
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
 ## css reference and sourses
 
