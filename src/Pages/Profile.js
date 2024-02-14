@@ -15,12 +15,13 @@ const Profile = ({ user }) => {
         className="container"
         style={{ margin: "80px", color: "#262626", fontSize: "20px" }}
       >
-        <h1>Welcome, {user.username}</h1>
+        <h1>Welcome, {user.first_name}</h1>
+        <p>Username: {user.username}</p>
         <p>First Name: {user.first_name}</p>
         <p>Last Name: {user.last_name}</p>
         <p>Email: {user.email}</p>
         <br></br>
-        <p>{user.username} We are excited for you to try new recipes!</p>
+        <h3>{user.first_name}, we are excited for you to try new recipes!</h3>
       </div>
     </main>
   );

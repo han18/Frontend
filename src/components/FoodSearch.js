@@ -8,7 +8,7 @@ const FoodSearch = ({ setSearchTerm }) => {
 
   // this is the input to search for recipes
   return (
-    <div className="container">
+    <div style={{ width: "900px", marginLeft: "400px" }}>
       <label htmlFor="searchInput">Search:</label>
       <input
         className="items"
