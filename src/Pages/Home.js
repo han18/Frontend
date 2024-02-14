@@ -3,7 +3,7 @@ import FoodDisplay from "../components/FoodDisplay";
 import FoodSearch from "../components/FoodSearch";
 
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState("a");
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
