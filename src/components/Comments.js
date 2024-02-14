@@ -125,7 +125,7 @@ const Comments = ({ id, user }) => {
           <form onSubmit={submitHanlder}>
             <textarea
               onChange={(e) => setComment(e.target.value)}
-              placeholder="Write Something..."
+              placeholder="Comment on this recipe...."
               required
               value={comment}
             />

@@ -7,6 +7,10 @@ https://github.com/han18/Backend.git
 
 HowEdible is a recipe search app that contains recipes from all over the world with images and cooking instructions.
 
+## future implementations of this project
+
+Convert the app into a food social network where people who are passionate about cooking can create channels and upload short videos of their recipes.
+
 ## List of installed dependencies
 
 react-router-dom,
