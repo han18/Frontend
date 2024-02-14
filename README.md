@@ -47,6 +47,10 @@ https://www.youtube.com/watch?v=rWfhwW9forg
 https://stackoverflow.com/questions/60688411/assign-local-storage-to-react-state-react-hooks
 https://www.youtube.com/watch?v=fTP2gi7e3k8
 
+## Using the Crud operation to create comments source
+
+https://www.youtube.com/watch?v=XYrNkTkx8Uc
+
 ## optional chaining
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining

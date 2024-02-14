@@ -40,6 +40,7 @@ const Comments = ({ id, user }) => {
     // to edit comment
     if (editableComment?._id) {
       const options = {
+        // put request
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: comment, user_id: user?._id }),
@@ -71,6 +72,7 @@ const Comments = ({ id, user }) => {
         .catch((err) => console.error(err));
     } else {
       const options = {
+        // post request
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: comment, user_id: user?._id }),
@@ -96,6 +98,7 @@ const Comments = ({ id, user }) => {
 
   // delete comment handler
   const deleteComment = (id) => {
+    // to delete comment
     const options = {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
