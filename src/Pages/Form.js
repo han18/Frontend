@@ -27,7 +27,7 @@ const Form = ({ setUser }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3100/api/users",
+        "https://howedible-backend.onrender.com/api/users",
         formData
       );
 
