@@ -43,6 +43,7 @@ const App = () => {
 
 export default App;
 
+// this is the old code
 // return (
 //   <div class="container">
 //     <h1>Meal Search App</h1>
