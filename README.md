@@ -50,8 +50,10 @@ https://www.youtube.com/watch?v=fTP2gi7e3k8
 ## optional chaining
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+https://www.youtube.com/watch?v=K7rHYyf6E0g
+https://javascript.info/optional-chaining
 
-## css reference and sourses
+## css reference and sources
 
 https://www.youtube.com/watch?v=ZawAwPYrxGA
 https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
