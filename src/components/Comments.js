@@ -19,7 +19,7 @@ const Comments = ({ id, user }) => {
         try {
           // get all comments
           const commentResponse = await fetch(
-            `http://localhost:3100/api/comments`
+            `https://howedible-backend.onrender.com/api/comments`
           );
           const commentsData = await commentResponse.json();
           // if recipe is there or return an empty array
@@ -46,7 +46,7 @@ const Comments = ({ id, user }) => {
       };
 
       fetch(
-        `http://localhost:3100/api/comments/${editableComment?._id}`,
+        `https://howedible-backend.onrender.com/api/comments/${editableComment?._id}`,
         options
       )
         .then((response) => response.json())
@@ -76,7 +76,7 @@ const Comments = ({ id, user }) => {
         body: JSON.stringify({ content: comment, user_id: user?._id }),
       };
 
-      fetch("http://localhost:3100/api/comments", options)
+      fetch("https://howedible-backend.onrender.com/api/comments", options)
         .then((response) => response.json())
         .then((response) => {
           if (response?._id) {
@@ -101,7 +101,7 @@ const Comments = ({ id, user }) => {
       headers: { "Content-Type": "application/json" },
     };
 
-    fetch(`http://localhost:3100/api/comments/${id}`, options)
+    fetch(`https://howedible-backend.onrender.com/api/comments/${id}`, options)
       .then((response) => response.json())
       .then((response) => {
         if (response?._id) {
