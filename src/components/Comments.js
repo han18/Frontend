@@ -110,7 +110,7 @@ const Comments = ({ id, user }) => {
         if (response?._id) {
           const updatedComments = comments?.filter(
             (item) => item?._id !== response?._id
-          );
+          ); // filter out the deleted comment from the comments list
           setComments(updatedComments);
         }
       })
@@ -119,7 +119,7 @@ const Comments = ({ id, user }) => {
   return (
     <div className="comments">
       <h2>Comments</h2>
-
+      {/* if users are logged in, show all comments */}
       {user?.email && (
         <div className={styles?.addComment}>
           <span>Add New Comment</span>

@@ -26,7 +26,9 @@ const Home = () => {
   }, [searchTerm]);
   return (
     <>
-      <h1>Recipe Search App</h1>
+      <h1 style={{ color: "green", fontFamily: "fantasy", marginLeft: "30px" }}>
+        Recipe Search App
+      </h1>
       <FoodSearch setSearchTerm={setSearchTerm} />
       <FoodDisplay searchResults={searchResults} />
     </>
