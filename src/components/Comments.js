@@ -151,16 +151,6 @@ const Comments = ({ id, user }) => {
               <p>{comment?.content}</p>
               {comment?.user_id?._id === user?._id && (
                 <div className={styles.commentAction}>
-                  {/* <img
-                    onClick={() => deleteComment(comment?._id)}
-                    src="/delete.png"
-                    alt="delete"
-                  />
-                  <img
-                    onClick={() => setEditableComment(comment)}
-                    src="/editing.png"
-                    alt="editing"
-                  /> */}
                   <button
                     style={{ background: "red" }}
                     onClick={() => deleteComment(comment?._id)}
