@@ -19,7 +19,7 @@ axios
 
 ## Source References
 
-Form: signup
+Form: sign up
 https://youtu.be/adMD46G5BXU?si=uPdY0tBqmz9D0jf-
 https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/
 
@@ -62,7 +62,7 @@ https://javascript.info/optional-chaining
 https://www.youtube.com/watch?v=ZawAwPYrxGA
 https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 
-## This is the frontend wireframe of the app
+## This is the frontend wire-frame of the app
 
 <img width="912" alt="frontendwireframe" src="https://github.com/han18/Frontend/assets/35694323/1f4eba38-562f-42fa-94d5-76205f12beb3">
 
