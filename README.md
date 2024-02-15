@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Howedible Frontend
 
 This is the The backend github repository
 https://github.com/han18/Backend.git
