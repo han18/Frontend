@@ -72,7 +72,7 @@ const Comments = ({ id, user }) => {
         .catch((err) => console.error(err));
     } else {
       const options = {
-        // post request
+        // post new comment
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: comment, user_id: user?._id }),
