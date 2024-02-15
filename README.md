@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# Howedible Frontend
 
 This is the The backend github repository
 https://github.com/han18/Backend.git
 
+Frontend deployment link 
+https://elegant-starburst-9dc3a6.netlify.app/
 ## Description of the project:
 
 HowEdible is a recipe search app that contains recipes from all over the world with images and cooking instructions.
