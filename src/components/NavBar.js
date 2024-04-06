@@ -14,7 +14,7 @@ const NavBar = ({ user, setUser }) => {
   return (
     <nav
       style={{
-        backgroundColor: "#045C25 ",
+        backgroundColor: "blue ",
         padding: "6px",
         color: "white",
         margin: "10px",
